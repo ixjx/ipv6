@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>IPv6子网掩码计算器网络地址格式-懒人计算器</title>
+<meta name="keywords" content="IPv6子网掩码计算器,ip,掩码" />
+<meta name="description" content="IPv6子网掩码计算器 以斜线表示法输入IPv6地址和子网大小：ipv6网络地址格式,此计算器可用于IPv6计算，其方式与使用VLSM规划IPv4网络的方式相同。
+注意！！IPv6的规模可能很大。 如果您尝试计算数十亿个子网，此计算器可能会导致浏览器崩溃！因此，仅显示前999个子网。 请记住推荐的最小子网是/64。" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="format-detection content=telephone=no">
+
+</head>
+<body class="guibowebindex articleNews">
+<div class="header">
+</div>
+
+<p><font color="#FFFFFF"></font></p>
+
+<div class="clear"></div>
+<div class="guiboweb" style="text-align: center">
+	<div class="title">  <h1>IPv6子网掩码计算器 </h1>
+</div>
+
+
+<script src="/ipv6/js/jsipv61.js"></script>
+<p>IPv6子网掩码计算器  以斜线表示法输入IPv6地址和子网大小：</p>
+<p>ipv6网络地址格式,</p>
+<p>例如：2001:0000:1010:CD30:1111:0000:1101:0000/64</p>
+<p>ipv6网络地址格式,例如：15ba:db5::/64</p>
+<form onsubmit="return false;">
+	<label>IPv6地址:</label>
+	<button onClick="calculate();" style="width: 70px; background-color: #000000">
+	<font color="#00FF00">计算&nbsp; </font></button>
+	<input type='text'  id='ip' value='2101:db6::/64' style="border:1px solid #008000; width:280px" size="50" name="h"/> 
+	
+</form>
+<table  bgcolor="#DFF4FF" cellpadding="2" cellspacing="1" width="450px" style="position: relative;left: 36%;top: 10px;text-align: left;font-family: Consolas;">
+	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN">
+		<span title class>压缩</span></span>:</td><td id='address'></td></tr>
+	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN"><span title>
+		扩展</span></span>:</td><td id='expanded'></td></tr>
+	<tr><td width="70"><span lang="zh-cn">前缀</span><span class="tlid-translation translation" lang="zh-CN"></span></td><td id='prefix'></td></tr>
+	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN">
+		<span title class>范围:</span></span></td><td id='first'></td></tr>
+	<tr><td width="70"></td><td id='last'></td></tr>
+	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN">
+		<span title class>数量</span></td><td id='64s'></td></tr>
+</table>
+
+<p id='facts'>
+<p id='subnetted'> </p>  
+
+<script src="/ipv6/js/ipv6js.js"></script>
+<script src="/ipv6/js/jsipv62.js"></script>
+
+
+<p>此计算器可用于IPv6<span id=titlename0>计算</span>，其方式与使用VLSM规划IPv4网络的方式相同。<br>
+注意！！IPv6的规模可能很大。 如果您尝试计算数十亿个子网，此计算器可能会导致浏览器崩溃！<br>
+因此，仅显示前999个子网。 请记住推荐的最小子网是/64。</p>	</div>
+
+
+<span id="keyword">     </span>	
+
+
+<div class="footer">
+<a href="http://www.ab126.com/" ><font color="#FF0000"></font></a>
+</div>
+
+</body>
+</html>
