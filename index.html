@@ -25,7 +25,15 @@
 <div class="guiboweb" style="text-align: center">
 	<div class="title">  <h1>IPv6子网掩码计算器 </h1>
 </div>
+<script>
+function host(){
+	prefix=document.getElementById("ip").value.split("/")[1];
+	host_num=Math.pow(2,128-prefix);
+	document.getElementById("64s").innerHTML=host_num;
+}
 
+
+</script>
 
 <script src="/ipv6/js/jsipv61.js"></script>
 <p>IPv6子网掩码计算器  以斜线表示法输入IPv6地址和子网大小：</p>
@@ -34,22 +42,22 @@
 <p>ipv6网络地址格式,例如：15ba:db5::/64</p>
 <form onsubmit="return false;">
 	<label>IPv6地址:</label>
-	<button onClick="calculate();" style="width: 70px; background-color: #000000">
+	<button onClick="calculate();host();" style="width: 70px; background-color: #000000">
 	<font color="#00FF00">计算&nbsp; </font></button>
 	<input type='text'  id='ip' value='2101:db6::/64' style="border:1px solid #008000; width:280px" size="50" name="h"/> 
 	
 </form>
 <table  bgcolor="#DFF4FF" cellpadding="2" cellspacing="1" width="450px" style="position: relative;left: 36%;top: 10px;text-align: left;font-family: Consolas;">
 	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN">
-		<span title class>压缩</span></span>:</td><td id='address'></td></tr>
+		<span title class>压缩:</span></span></td><td id='address'></td></tr>
 	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN"><span title>
-		扩展</span></span>:</td><td id='expanded'></td></tr>
-	<tr><td width="70"><span lang="zh-cn">前缀</span><span class="tlid-translation translation" lang="zh-CN"></span></td><td id='prefix'></td></tr>
+		扩展:</span></span></td><td id='expanded'></td></tr>
+	<tr><td width="70"><span lang="zh-cn">前缀:</span><span class="tlid-translation translation" lang="zh-CN"></span></td><td id='prefix'></td></tr>
 	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN">
 		<span title class>范围:</span></span></td><td id='first'></td></tr>
 	<tr><td width="70"></td><td id='last'></td></tr>
 	<tr><td width="70"><span class="tlid-translation translation" lang="zh-CN">
-		<span title class>数量</span></td><td id='64s'></td></tr>
+		<span title class>数量:</span></td><td id='64s'></td></tr>
 </table>
 
 <p id='facts'>
